@@ -1,0 +1,2 @@
+C:\Users\Hans\Development\DemoOSCProj\EosCueMover\Debug\EosSyncLib.pdb
+C:\Users\Hans\Development\DemoOSCProj\EosSyncLib\EosSyncLib\Debug\EosSyncLib.pdb

@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EosCueListLabeller", "EosCueListLabeller\EosCueListLabeller.vcxproj", "{1B626FDC-F703-470B-84F0-BE3776BF4D24}"
+	ProjectSection(ProjectDependencies) = postProject
+		{08BC4BEE-3956-49EB-8F05-3CE66DF5CA2E} = {08BC4BEE-3956-49EB-8F05-3CE66DF5CA2E}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EosSyncLib", "EosSyncLib\EosSyncLib\EosSyncLib.vcxproj", "{08BC4BEE-3956-49EB-8F05-3CE66DF5CA2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1B626FDC-F703-470B-84F0-BE3776BF4D24}.Debug|x64.ActiveCfg = Debug|x64
+		{1B626FDC-F703-470B-84F0-BE3776BF4D24}.Debug|x64.Build.0 = Debug|x64
+		{1B626FDC-F703-470B-84F0-BE3776BF4D24}.Release|x64.ActiveCfg = Release|x64
+		{1B626FDC-F703-470B-84F0-BE3776BF4D24}.Release|x64.Build.0 = Release|x64
+		{08BC4BEE-3956-49EB-8F05-3CE66DF5CA2E}.Debug|x64.ActiveCfg = Debug|x64
+		{08BC4BEE-3956-49EB-8F05-3CE66DF5CA2E}.Debug|x64.Build.0 = Debug|x64
+		{08BC4BEE-3956-49EB-8F05-3CE66DF5CA2E}.Release|x64.ActiveCfg = Release|x64
+		{08BC4BEE-3956-49EB-8F05-3CE66DF5CA2E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8DC387C7-376C-4A5A-93F1-4C1DDBBAE71E}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros">
+    <QTDIR>$(QTROOT)\5.15.1\msvc2019_64</QTDIR>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IncludePath>$(QTDIR)\include;$(QTDIR)\include\QtCore;$(QTDIR)\include\QtGui;$(QTDIR)\include\QtWidgets;$(QTDIR)\include\QtXmlPatterns;$(IncludePath)</IncludePath>
+    <CustomBuildBeforeTargets>BuildGenerateSources</CustomBuildBeforeTargets>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <CustomBuild>
+      <Command>$(QTDIR)\bin\moc.exe "%(FullPath)" -DRAPTORDIRECTX -DWIN32 -o "GeneratedFiles\moc_%(Filename).cpp"</Command>
+    </CustomBuild>
+    <CustomBuild>
+      <Message>moc'ing %(FullPath)</Message>
+    </CustomBuild>
+    <CustomBuild>
+      <Outputs>GeneratedFiles\moc_%(Filename).cpp</Outputs>
+      <AdditionalInputs>$(QTDIR)\bin\moc.exe</AdditionalInputs>
+      <BuildInParallel>true</BuildInParallel>
+    </CustomBuild>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <BuildMacro Include="QTDIR">
+      <Value>$(QTDIR)</Value>
+      <EnvironmentVariable>true</EnvironmentVariable>
+    </BuildMacro>
+  </ItemGroup>
+</Project>
