@@ -5,7 +5,7 @@ EosCueListLabeller is a demo project that shows how to use EosSyncLib to obtain 
 ![Example Screenshot](screenshot.png?raw=true "Example Screenshot")
 
 ##Dependencies
-This app was written using MSVC2019 and Qt 5.15.1, and targeted for Windows systems.
+This app was written using MSVC2019, 64-bit, and Qt 5.15.1, and targeted for Windows systems.
 
 To compile, you will need to have a Qt5 installation (an open-source version is available at qt.io), and define a system variable QTROOT to be the directory where you have the Qt installation (usually the same directory that you have the Qt maintenance tool installed).
 
